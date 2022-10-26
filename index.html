@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeGraph</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <button onclick="refresh()" class="button">Refresh</button>
+    <button onclick="orderList('asc')" class="button">Order ASC</button>
+    <button onclick="orderList('desc')" class="button">Order Desc</button>
+    <!-- <form action="" id="search">
+        <label for="searchParam">Position of pokemon</label>
+        <input type="text" name="searchParam" placeholder="Enter the name of Pokemon">
+        <button onclick="searchList(document.getElementsByName('searchParam')[0].value)" class="button">Search</button>
+    </form> -->
+    <button onclick="calcMitja()" class="button">Average</button>
+    <input type="text" id="txtSearch" />
+    <div class="chart-container" style="position: relative; width:400px">
+        <canvas id="myChart"></canvas>
+    </div>
+    <section id="result"></section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
